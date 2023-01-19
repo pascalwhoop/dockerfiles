@@ -1,0 +1,21 @@
+Virtual Machines/
+Virtual Machines.localized//
+.minikube
+Box Sync/
+Pictures/
+Library/Caches/
+.Trash/
+.cache/
+.virtualenvs/
+Documents/**/venv/
+Documents/**/venv/
+Documents/**/node_modules/
+**/Calendar Cache-wal
+Library/Containers/com.apple*
+Library/Containers/com.docker.docker/
+**/Logs/
+**/Cache/
+**/Cache*/
+**/cache/
+**/Caches/
+**/cache*/

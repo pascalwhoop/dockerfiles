@@ -1,0 +1,1 @@
+docker run -v /Users/pascal_brokmeier:/Users/pascal_brokmeier --rm pascalwhoop/rsync /backup.sh
