@@ -1,10 +1,9 @@
 FROM archlinux:latest
 
 
-
 # installation of packages
 RUN pacman -Syu --cachedir /tmp --noconfirm
-RUN pacman -S --cachedir /tmp --noconfirm openssh vim wget curl nmap iputils traceroute dnsutils python-pip git
+RUN pacman -S --cachedir /tmp --noconfirm openssh vim wget curl nmap iputils traceroute dnsutils python-pip git perl
 RUN pacman -S --cachedir /tmp --noconfirm base-devel
 
 # installation of user
@@ -17,3 +16,5 @@ USER developer
 WORKDIR /home/developer
 ENV $PATH /home/developer/.local/bin:$PATH
 RUN git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm
+CMD ["perl" "-MPOSIX" "-e" "pause"]
+
